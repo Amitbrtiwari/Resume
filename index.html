@@ -9,14 +9,16 @@
 
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+            margin: 0%;
+            padding: 0%;
         }
         
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f0f0f0;
+            background-color: white;
+            line-height: 1.6;
+            height: fit-content;
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -26,19 +28,20 @@
         h1 {
             color: lightslategray;
             text-align: center;
-            background-color: rgb(65, 64, 63);
+            background-color: rgb(236, 236, 236);
             padding: 20px;
-            margin-bottom: 20px;
+           
         }
         
         .header {
-            background-color: rgb(221, 219, 216);
+            background-color: rgb(230, 230, 230);
             border: 2px solid gainsboro;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            margin-bottom: 20px;
+            margin: 0%;
+           
         }
         
         .name {
@@ -49,21 +52,28 @@
         .main, .part, .ft {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             padding: 20px;
-            margin-bottom: 20px;
+            margin: 0%;
+   
+            
+        }
+        .part{
+            margin: 0%;
+            background-color: white;
         }
         
         .em, .edu, .pro, .skill {
             padding: 20px;
-            margin-bottom: 20px;
-            background-color: white;
-            border: 1px solid #ddd;
+            background-color: white; 
             border-radius: 5px;
             width: 100%;
-            max-width: 800px;
+            margin:20px;
+            display: flex;
+            flex-direction: column;
         }
+       
         
         @media (min-width: 768px) {
             .header, .main, .part, .ft {
@@ -75,6 +85,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                margin: 0%;
             }
         
             .name {
@@ -84,41 +95,44 @@
             .main, .part, .ft {
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: flex-start;
+                align-items: center;
+               
+            }
+            .main{
+                margin: 0%;
+                background-color: white;
             }
         
-            .em, .edu, .pro, .skill {
-                flex-direction: row;
-                justify-content: space-between;
-            }
+          
         }
-        
         .pro, .skill {
             flex-basis: 50%;
         }
-        
         footer {
-            background-color: rgb(238, 206, 206);
-            padding: 20px;
+            background-color: white;
             text-align: center;
+            margin: 0%;
+            
+
         }
         
         .f, .h {
             padding: 10px;
-            margin-bottom: 20px;
             background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            border: 1px solid white;
             width: 100%;
-            max-width: 800px;
+            height: auto;
+           
+          
         }
         
         ul, ol {
-            margin-left: 20px;
+            margin-top: 10px;
+
         }
         
         li {
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
         
         a {
@@ -129,6 +143,14 @@
         a:hover {
             text-decoration: underline;
         } 
+        .edu,.skill{
+            position: relative;
+            bottom: 65px;
+            left: 50px;
+            
+            
+        }
+
     </style>
 </head>
 
@@ -154,13 +176,15 @@
 </nav>
 </header>
 
-  
-   <main class ="main">
+  <main class ="main">
     <div class="em"> 
         <h2 style="color:rgb(1, 63, 42)"> Employment</h2>
         <p> sep 2023 - march 2024</p>
+        <br>
         <h4> Front-end developer- EGSS</h6>
+            <br>
         <p>Dynamic and results-oriented Front-End Developer with 7 months of hands-on experience at EGSS. Proficient in translating design mockups and wireframes into responsive and interactive web experiences. Skilled in HTML, CSS, JavaScript, and modern front-end frameworks like React.js. </p>
+        <br>
         <h4> Content Writer-JavaTpoint</h6>
         <p> In my role as a Content Writer at Javatpoint, I have contributed to creating informative and engaging content that serves the educational needs of a global audience. I am dedicated to delivering valuable insights and fostering knowledge sharing within the programming community through my writing.</p>
     </div>
@@ -168,9 +192,11 @@
     <H2 style="color:rgb(3, 58, 40)"> Education</H2>
     <p> 2020-2023 Graduation</p>
     <h4> G.L BAJAJ INSTITUTE OF MANAGEMENT--BCA(77%)</h6>
+        <br>
     <p> 2018-2019</p>
     <h4> SGSS Jaunpur--12th(58%)</h6>
     <p> 2016-2017</p>
+    <br>
     <h4> SGSS Jaunpur--10th(71%)</h6>
  </div>
     
@@ -183,6 +209,7 @@
         <h2 style="color:rgb(5, 70, 48)"> Projects </h2>
     <p> <b>Online Learning platform :</b><br>
             Develop an online platform for learning various courses. Users can browse courses, enroll, and track their progress. <br>The platform includes user authentication, course listings with descriptions, video streaming capabilities, and a dashboard for students to view their enrolled courses.</p>
+            <br>
             <h3> Technology Used: </h3>
             <ul>
             <li><b>Frontend:</b> HTML5, CSS3, JavaScript, React.js</li>
@@ -192,7 +219,7 @@
 <br>
     <p> <b>AI Project: Sentiment Analysis for Product Reviews </b><br>
     Implement a sentiment analysis model that analyzes the sentiment (positive, negative, neutral) of product reviews. The model processes textual data, applies natural language processing techniques, and outputs sentiment labels for each review.  </p>
-
+<br>
 <h3> Technologies used</h3>
 <ul>
 <li>Python for programming</li>
@@ -203,7 +230,7 @@
 
 
     <div class="skill">
-        <h3 style="text-align:center; color:rgb(3, 58, 40)"> Proficient Skills:</h3>
+        <h3 style="color:rgb(3, 58, 40)"> Proficient Skills:</h3>
         <ol>
             <li><b>Web Development: </b> 
                <ul>
@@ -214,7 +241,7 @@
                   <li >Node.js</li>  
                    <li>RESTful APIs & Git</li> </li>
                </ul>
-                 
+                 br
             <li> <b>Artificial Intelligence (AI):</b></li>
             <ul>
                 <li>Python </li> 
